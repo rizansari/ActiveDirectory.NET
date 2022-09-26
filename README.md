@@ -2,7 +2,7 @@
 
 Active Directory Group and User listings, Authentication and Other Helper Classes
 
-Library Version: v1.0.0
+Library Version: v1.0.1
 
 
 ## Installation
@@ -16,6 +16,11 @@ Install-Package ActiveDirectory.NET
 ### Create AD object
 ```
 var ad = new ActiveDirectory.NET.AD("192.168.0.1");
+```
+
+### Create AD object with User impersonation
+```
+var ad = new ActiveDirectory.NET.AD("192.168.0.1", "user", "password", "domain");
 ```
 
 ### Get All Groups
